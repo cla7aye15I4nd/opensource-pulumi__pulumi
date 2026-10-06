@@ -97,7 +97,6 @@
         {
             "path": ["config"],
             "propagate": false,
-            "exclude": true,
             "flags": {
                 "json": { "omit": true, "preset": true }
             }
@@ -105,7 +104,6 @@
         {
             "path": ["config", "get"],
             "propagate": false,
-            "exclude": true,
             "flags": {
                 "json": { "omit": true, "preset": true }
             }
@@ -113,15 +111,13 @@
         {
             "path": ["config", "set-all"],
             "propagate": false,
-            "exclude": true,
             "flags": {
                 "json": { "omit": true, "preset": true }
             }
         },
         {
-            "path": ["config", "env", "ls"],
+            "path": ["config", "env", "list"],
             "propagate": false,
-            "exclude": true,
             "flags": {
                 "json": { "omit": true, "preset": true }
             }
@@ -129,7 +125,6 @@
         {
             "path": ["config", "refresh"],
             "propagate": false,
-            "exclude": true,
             "flags": {
                 "force": { "omit": true, "preset": true }
             }
