@@ -231,6 +231,9 @@ type cloudBackend struct {
 	cachedUpdateData *cachedUpdateData
 
 	readingUpdateID atomic.Pointer[string]
+
+	stackOutputsWaitLimit time.Duration
+	stackOutputsPollFloor time.Duration
 }
 
 // Assert we implement the backend.Backend and backend.SpecificDeploymentExporter interfaces.
