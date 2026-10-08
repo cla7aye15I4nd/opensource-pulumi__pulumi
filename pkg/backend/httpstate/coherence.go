@@ -51,7 +51,7 @@ func (b *cloudBackend) awaitStackOutputs(
 			return apitype.StackOutputsResponse{}, ctx.Err()
 		case <-time.After(delay):
 		}
-		delay = min(2*delay, 5*time.Second)
+		delay = max(min(2*delay, 5*time.Second), time.Minute)
 	}
 }
 
